@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST APP</title>
+    <link rel="stylesheet" href="./res/css/style.css" />
+  </head>
+  <body>
+    <a href="./landing.html">Landing</a>
+    <div class="container box">
+      <div class="columns">
+        <div class="column">
+          <div class="control">
+            <a class="button is-info" id="getAllDogsBtn"> GET all Dogs </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Dog ID" id="getDogByIdInput"/>
+            </div>
+            <div class="control">
+              <a class="button is-info" id="getDogByIdBtn"> GET by ID </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="name" id="postNameInput"/>
+              <input class="input" type="number" placeholder="age" id="postAgeInput"/>
+            </div>
+            <div class="control">
+              <a class="button is-info" id="postDogBtn"> POST </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="ID" id="putIdInput"/>
+              <input class="input" type="text" placeholder="name" id="putNameInput"/>
+              <input class="input" type="text" placeholder="age" id="putAgeInput"/>
+            </div>
+            <div class="control">
+              <a class="button is-info" id="putDogBtn"> PUT </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="ID" id="patchIdInput"/>
+              <input class="input" type="text" placeholder="name" id="patchNameInput"/>
+              <input class="input" type="text" placeholder="age" id="patchAgeInput"/>
+            </div>
+            <div class="control">
+              <a class="button is-info" id="patchDogBtn"> PATCH </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Dog ID" id="deleteIdInput"/>
+            </div>
+            <div class="control">
+              <a class="button is-info" id="deleteDogBtn"> DELETE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="info" class="box"></p>
+    </div>
+    <script src="./res/js/dog.js"></script>
+  </body>
+</html>
